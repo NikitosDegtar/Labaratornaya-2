@@ -1,21 +1,18 @@
-#include "iostream"
-#include "stdlib.h"
-#include "conio.h"
-#include "windows.h"
- using namespace std;
- 
+#include<stdio.h>
 void main()
 {
-   char arr[3];
-   cout<<"Vvedite  tri chisla"<<endl;
-for (int i=0;i<3;i++)
-   cin>>arr[i];
-for (int i=0;i<3;i++)
-{
-for(int j=i;j<3;j++)
-if((arr[j]==arr[j+1])||(arr[j]==arr[j+2]))
-cout<<" BINGO!"<<endl;
+int a, b, c;
+ printf("Enter a ");
+  scanf ("%d" , &a);
+ printf("Enter b ");
+  scanf ("%d" , &b);
+ printf("Enter c ");
+  scanf ("%d" , &c);
+ if (a==b && a==c ) printf(" a = b = c" );
+ else if (a==b ) printf(" a = b" );
+ else if (b==c ) printf(" b = c " );
+ else if (c==a ) printf(" a = c ");
+else printf(" net ravnux chisil " );
+
 }
-   
-_getch();
-}
+
